@@ -2,7 +2,7 @@
 
 Basically everything is the same. I added an additional example (`examples/wait-for-interrupt-to-shutdown.js`). You just need to:
 
-1. Run `npm install shelljs onoff --save`
+1. Run `npm install shelljs moment fs-extra onoff --save`
 2. Add the script to etc/rc.local: `sudo nano /etc/rc.local` and add:
 
   ```shell
