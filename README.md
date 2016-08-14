@@ -1,4 +1,22 @@
-# onoff 
+# The Shutoff Edits
+
+Basically everything is the same. I added an additional example (`examples/wait-for-interrupt-to-shutdown.js`). You just need to:
+
+1. Run `npm install shelljs onoff --save`
+2. Add the script to etc/rc.local: `sudo nano /etc/rc.local` and add:
+
+  ```shell
+  # Tweaked from http://stackoverflow.com/a/31113532/3219667
+  # Ampersand from: https://www.raspberrypi.org/documentation/linux/usage/rc-local.md
+  # /etc/rc.local
+  export PATH=/sbin:/usr/sbin:$PATH
+  cd /home/pi/onoff-demo
+  su pi -c 'node init.es6' &
+  ```
+
+3. Make sure that you have the proper route to init.es6, etc.
+
+# onoff
 
 GPIO access and interrupt detection with **Node.js** on Linux boards like the
 Raspberry Pi Zero, 1, 2, or 3, BeagleBone, or BeagleBone Black.
