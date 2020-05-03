@@ -1,3 +1,5 @@
+**Archived 03May2020** - I have moved to using [`RPi_GPIO`](https://pypi.org/project/RPi.GPIO/) in Python. See the [upstream repo](https://github.com/fivdi/onoff) for the latest code
+
 # The Shutoff Edits
 
 Basically everything is the same. I added an additional example (`examples/wait-for-interrupt-to-shutdown.js`). You just need to:
